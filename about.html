@@ -10,13 +10,13 @@
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header id="header">
-    <div>
+  <header>
+  	<div class="container">
       <a href="index.html">
       <svg width="85" height="35" viewBox="0 0 85 35" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M33.99 17.5C33.99 26.613 26.6047 34 17.495 34C8.38534 34 1 26.613 1 17.5C1 8.38703 8.38534 1 17.495 1C26.6047 1 33.99 8.38703 33.99 17.5Z" stroke="#1BBDD4" stroke-width="2"/>
@@ -28,7 +28,7 @@
       </svg>
       </a>
       <nav>
-        <ul>
+      <ul class="nav">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -37,22 +37,16 @@
     </div>
   </header>
 
-  <main id="main">
-    <div>
-      <div>
-        <h1>About</h1>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div class="">
+  <main  id="about">
+        	<div class="container">
+      <div class="row">
+        <div class="column">
           <picture>
             <source srcset="img/olgaprofile@1.jpg" media="(max-width:767px)">
-            <img src="img/olgaprofile@2.jpg" alt="House Hunters - Real Estate responsive app">
+            <img src="img/olgaprofile@2.jpg" alt="House Hunters - Real Estate responsive app" class="cover-img">
           </picture>
         </div>
-        <div>
-          <div>
+                  <div class="column">
             <h2>My Story</h2>
             <p>Hi there, I'm Olga, a UX/UI designer. I dared to change completely my career path from Quality management in the automotive industry to a Design field. I love simple and clear products, when there is no need for explanation, all is
               working right-first-time and bring great experience.
@@ -60,9 +54,11 @@
               I'm very organized at my job, I like the system approach. It means that result of the creative process I will always turn to the clear system.
               I have Russian origin and currently, I’m based in Budapest. Thanks to my Quality Management job I had a chance to live in UK and France, work with teams from all over the world (China, US, Europe, India).
             </p>
-            <a href="files/cvaspro.pdf" target="_blank">Review my CV</a>
+            <a href="files/cvaspro.pdf" target="_blank" class="button">Review my CV</a>
           </div>
-          <div>
+          </div>
+          </div>
+          	<div class="container">
             <h2>Skills & Tools</h2>
             <div class="row">
     					<div class="column">
@@ -86,32 +82,29 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </main>
+            </main>
 
-  <footer id="contact">
-    <div>
-      <h2>Let's get in touch</h2>
+            <footer id="contact">
+          		<div class="container">
+          			<h3>Let's get in touch</h3>
 
-      <div class="social">
+          			<div class="social">
 
-        <a href="mailto:aspro.olga@gmail.com?body=Hi%20Olga">
-        <i class="fas fa-envelope"></i>
-        </a>
+          				<a href="mailto:aspro.olga@gmail.com?body=Hi%20Olga">
+          					<i class="fas fa-envelope"></i>
+          				</a>
 
-        <a href="LINKEDIN-URL" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+          				<a href="LINKEDIN-URL" target="_blank">
+          					<i class="fab fa-linkedin-in"></i>
+          				</a>
 
-        <a href="BEHANCE-URL" target="_blank">
-          <i class="fab fa-behance"></i>
-        </a>
-      </div>
-      <p class="copy">&copy; Olga Aspro 2021</p>
-    </div>
-  </footer>
+          				<a href="BEHANCE-URL" target="_blank">
+          					<i class="fab fa-behance"></i>
+          				</a>
+          			</div>
+          			<p class="copy">&copy; Olga Aspro 2021</p>
+          		</div>
+          	</footer>
 
   <div class="back-to-top">
     <i class="fas fa-angle-up"></i>
