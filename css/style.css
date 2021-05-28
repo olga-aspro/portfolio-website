@@ -15,7 +15,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #1B1C20;
 }
 
@@ -47,7 +47,7 @@ img {
 /*link*/
 
 a {
-  color: #1BBDD4;
+  color: #A0A1A8;
   text-decoration: none;
 }
 
@@ -96,6 +96,10 @@ a:active {
   font-size: 0.8em;
   font-weight: 400;
 }
+.nav_link {
+  color: #1B1C20 !important;
+  font-weight: 500;
+}
 
 /* button */
 
@@ -142,13 +146,10 @@ header {
 
 header h2 {
   color: #1B1C20;
+  display: inline;
     }
 
-  .logo {
-    max-width: 250px;
-  }
-
-  nav>ul {
+    nav>ul {
     list-style-type: none;
     padding: 0;
   }
@@ -160,8 +161,8 @@ header h2 {
   nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 400;
+    font-size: 0.75em;
+    font-weight: 500;
     color: #1BBDD4;
   }
 
@@ -208,7 +209,6 @@ main {
 }
 
 #work .row {
-  display: inline-block;
   background: #EFEFEF;
   border-radius: 5px;
   text-align: center;
@@ -232,13 +232,11 @@ margin: 8px 0;
   margin-top: 0;
 }
 
-#hero span {
-  display: inline;
+picture {
+display: block;
+    line-height: 0;
 }
-span {
-  display: block;
-  margin-top: 12px;
-}
+
 /* footer */
 
  #contact {
@@ -251,6 +249,92 @@ span {
    padding-top: 24px;
  }
 
+ /*CSS Animations example*/
+
+ svg {
+   width: 100%;
+ max-width: 100%;
+ height: auto;
+ }
+ @keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 24s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 29s cloud-move-reverse infinite alternate linear;
+}
+
+/*House Hunters*/
+
+.container-cover{
+  background: linear-gradient(270deg, rgba(0, 194, 203, 0.6) 0%, rgba(0, 112, 240, 0.6) 100%);
+color: #FFFFFF;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+.container-project {
+  background: image
+text-align: left;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+;
+}
+
+.row-project {
+display: flex;
+max-width: 50%
+}
+.column-skills {
+display: flex;
+flex-direction: row;
+}
+.container-persona {
+background: #F2F2F3;
+text-align: center;
+}
+.row-persona {
+display: flex;
+}
+.icons {
+display: flex;
+flex-direction: row;
+}
+.column-persona {
+display: flex;
+flex-direction: column;
+max-width: 50%;
+padding: 16px;
+text-align: left;
+}
  /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -263,8 +347,7 @@ header {
 nav {
     width: auto;
         float: right;
-        margin-top: -25px;
-}
+        }
 nav>ul {
     margin: 0;
 }
@@ -296,11 +379,24 @@ main h2 {
 }
 #work .row {
     padding: 0px;
+    display: flex;
+    }
+#work .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-#about-page .row {
-  margin: 24px;}
 
+#about-page .row {
+  margin: 24px;
 }
+}
+
+
+
+
+
 
 /* ==============================
 Large devices (1024px or larger)
