@@ -7,17 +7,17 @@
   <title>Olga Aspro UX/UI</title>
   <script src="https://kit.fontawesome.com/de1731136c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
-		referrerpolicy="no-referrer" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    	<div class="container">
+    <div class="container">
       <a href="index.html">
-      	<h2>Olga Aspro</h2>
+        <h2>Olga Aspro</h2>
       </a>
       <nav>
         <ul class="nav">
@@ -29,18 +29,18 @@
     </div>
   </header>
 
-  <main id="top">
-    <div id="project">
-			<div class="container">
-        <h1>Mobile app: Gale</h1>
-        <p>Weather forecasts for water sports</p>
-        <p>UX/UI case study</p>
-        <p>October 2020</p>
-      </div>
-    </div>
+  <main id="gale">
 
-    <div>
-    	<div class="container">
+    <div class="section one">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h1>Mobile app: Gale</h1>
+            <p>Weather forecasts for water sports</p>
+            <p>UX/UI case study</p>
+            <p>October 2020</p>
+          </div>
+        </div>
         <div class="row">
           <div class="column">
             <picture>
@@ -48,7 +48,14 @@
               <img src="img/gale/mockup-landing@2x.png" alt="Mock-up picture">
             </picture>
           </div>
-          <div class="column">
+        </div>
+      </div>
+    </div>
+
+    <div class="section two">
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-6">
             <h2>Skills</h2>
             <ul>
               <li>Research</li>
@@ -58,7 +65,7 @@
               <li>UI design</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <h2>Tools</h2>
             <ul>
               <li>Adobe XD</li>
@@ -71,15 +78,15 @@
       </div>
     </div>
 
-    <div>
-      	<div class="container">
-        <h1>00. Kick-off</h1>
+    <div class="section three">
+      <div class="container">
         <div class="row">
-          <div class="column">
+          <h1>00. Kick-off</h1>
+          <div class="column col-md-4">
             <h2>Project overview</h2>
           </div>
-          <div class="column">
-            <p>HGale is a concept of the app which I create during my study at CareerFoundry. The app is 
+          <div class="column col-md-8">
+            <p>Gale is a concept of the app which I create during my study at CareerFoundry. The app is 
               designed for water activity enthusiasts, providing clear, simple, and precise reports to help 
               people understand and enjoy the weather and stay safe at any time.ocused on UI design, color, typography, UI elements. The brief I used had 5 user stories, persona, and partial brand guidelines.</p>
           </div>
@@ -87,23 +94,23 @@
       </div>
     </div>
 
-    <div>
-      	<div class="container">
-        <h1>01. UNDERSTAND</h1>
+    <div class="section four">
+      <div class="container">
         <div class="row">
-          <div class="column">
+          <h1>01. UNDERSTAND</h1>
+          <div class="column col-md-4">
             <h2>Problem Statement</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>Our water-sports enthusiasts need a way to have simple, clear information about wind, wave, and weather conditions at any moment because they wish to plan their water activities with confidence about the weather and stay safe. </p>
           </div>
         </div>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-6">
             <h2>Product goals</h2>
             <p>Provide beautifully displayed and easy-to-understand wind, wave, and weather reports, forecasts, and statistics for sailors, surfers, divers, and any other water sports aficionado.</p>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <h2>Basic App Feature Requirements</h2>
             <ul>
               <li>An onboarding page</li>
@@ -116,62 +123,66 @@
           </div>
         </div>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Competitive Analysis</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>Once the problem statement was clear I started my research from the competitive analysis of Windfinder and Weesurf. I analyzed their key objectives, marketing profile, overall strategy, created SWOT and UX analysis.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-flex">
           <div class="column">
-            <picture>
+            <picture class="icon">
               <source srcset="img/gale/windfinder@1x.png" media="(max-width:767px)">
               <img src="img/gale/windfinder@2x.png" alt="Windfinder">
             </picture>
           </div>
           <div class="column">
-            <picture>
+            <picture class="icon">
               <source srcset="img/gale/weesurf@1x.png" media="(max-width:767px)">
               <img src="img/gale/weesurf@2x.png" alt="Weesurf">
             </picture>
           </div>
         </div>
-        <div class="">
-          <picture>
-            <source srcset="img/gale/swot@1x.png" media="(max-width:767px)">
-            <img src="img/gale/swot@2x.png" alt="Windfinder SWOT">
-          </picture>
-        </div>
-        <div class="">
-          <picture>
-            <source srcset="img/gale/executive-summary@1x.png" media="(max-width:767px)">
-            <img src="img/gale/executive-summary@2x.png" alt="Executive Summary">
-          </picture>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      	<div class="container">
-        <h1>02. Observe</h1>
         <div class="row">
           <div class="column">
-            <h2>Survey</h2>
-          </div>
-          <div class="column">
-            <p>As a first step of the observing phase, I decided to make a survey to get quantitative data about users’ needs and attitudes. I used SurveyMonkey as a tool and collect the results by the link in Facebook (French community of diving
-              and sailing). 64 users took part in a survey.</p>
+            <picture>
+              <source srcset="img/gale/swot@1x.png" media="(max-width:767px)">
+              <img src="img/gale/swot@2x.png" alt="Windfinder SWOT">
+            </picture>
           </div>
         </div>
         <div class="row">
           <div class="column">
             <picture>
+              <source srcset="img/gale/executive-summary@1x.png" media="(max-width:767px)">
+              <img src="img/gale/executive-summary@2x.png" alt="Executive Summary">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section five">
+      <div class="container">
+        <h1>02. Observe</h1>
+        <div class="row">
+          <div class="column col-md-4">
+            <h2>Survey</h2>
+          </div>
+          <div class="column col-md-8">
+            <p>As a first step of the observing phase, I decided to make a survey to get quantitative data about users’ needs and attitudes. I used SurveyMonkey as a tool and collect the results by the link in Facebook (French community of diving
+              and sailing). 64 users took part in a survey.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column col-md-6">
+            <picture>
               <source srcset="img/gale/survey-1@1x.png" media="(max-width:767px)">
               <img src="img/gale/survey-1@2x.png" alt="Survey results 1">
             </picture>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/survey-2@1x.png" media="(max-width:767px)">
               <img src="img/gale/survey-2@2x.png" alt="Survey results 2">
@@ -179,10 +190,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Insights</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <ul>
               <li>More than 70% check the weather on the phone, so the app is a priority.</li>
               <li>Wind, general meteo, waves, and visibility are the most important weather parameters.</li>
@@ -196,106 +207,114 @@
 
     <hr>
 
-    <div>
-      	<div class="container">
+    <div class="section six">
+      <div class="container">
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Interviews</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>As the second step, I conducted interviews by Skype with 3 potential users, who had experience in diving and sailing. I followed 3 main goals:</p>
           </div>
         </div>
-        <div class="row">
-          <div class="column">
+        <div class="row row-flex">
+          <div class="column box">
             <h1>01</h1>
             <p>Understand user needs in a weather app, what kind of information they need out from there.</p>
           </div>
-          <div class="column">
+          <div class="column box">
             <h1>02</h1>
             <p>Documenting user opinions on competing weather sites.</p>
           </div>
-          <div class="column">
+          <div class="column box">
             <h1>03</h1>
             <p>Determining which weather apps or sites users enjoy using or leave them frustrated.</p>
           </div>
         </div>
         <div class="row">
-          <p>The results of the interview I turn to affinity mapping and made 3 iterations to find behavioral patterns and insights.</p>
+          <div class="column col-md-4"></div>
+          <div class="column col-md-8">
+            <p>The results of the interview I turn to affinity mapping and made 3 iterations to find behavioral patterns and insights.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div>
-      	<div class="container">
+    <div class="section seven">
+      <div class="container">
         <h1>03. POV</h1>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Personas & Journey Map</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>Based on user research I identified 2 personas: sailor Maxime and diver Nicolas with different needs and goals. From this moment all that I did around Gale it is not just my thoughts or imagination. Every step is based on data and with
               a focus on both personas. 
               I used journey maps to understand their thoughts and emotional experience while looking for the weather.</p>
           </div>
         </div>
-        <div>
-          <picture>
-            <source srcset="img/gale/persona@1x.png" media="(max-width:767px)">
-            <img src="img/gale/persona@2x.png" alt="Persona">
-          </picture>
+        <div class="row">
+          <div class="column">
+            <picture>
+              <source srcset="img/gale/persona@1x.png" media="(max-width:767px)">
+              <img src="img/gale/persona@2x.png" alt="Persona">
+            </picture>
+          </div>
         </div>
-        <div>
-          <picture>
-            <source srcset="img/gale/journey-map@1x.png" media="(max-width:767px)">
-            <img src="img/gale/journey-map@2x.png" alt="Journey map">
-          </picture>
+        <div class="row">
+          <div class="column">
+            <picture>
+              <source srcset="img/gale/journey-map@1x.png" media="(max-width:767px)">
+              <img src="img/gale/journey-map@2x.png" alt="Journey map">
+            </picture>
+          </div>
         </div>
       </div>
     </div>
 
-    <div>
-      	<div class="container">
+    <div class="section eight">
+      <div class="container">
         <h1>04. IDEATE & PROTOTYPE</h1>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>User flow</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>With help of Maxime and Nicolas, I was able to build a flow how they can use the app and create user flows for the main tasks step by step.</p>
           </div>
         </div>
-        <div>
-          <picture>
-            <source srcset="img/gale/user-flow@1x.png" media="(max-width:767px)">
-            <img src="img/gale/user-flow@2x.png" alt="User Flow">
-          </picture>
+        <div class="row">
+          <div class="column">
+            <picture>
+              <source srcset="img/gale/user-flow@2x.png" media="(max-width:767px)">
+              <img src="img/gale/user-flow@2x.png" alt="User Flow">
+            </picture>
+          </div>
         </div>
       </div>
     </div>
-
     <hr>
 
-    <div>
-      	<div class="container">
+    <div class="section nine">
+      <div class="container">
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Sitemap</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>According to the survey users mainly check the weather on a mobile phone, so priority was given to the mobile-first design. I decide to use co-existing hierarchies to give the opportunity to the user to easily switch between features.
               Keeping in mind all the above I created a sitemap as a global view of the app screens and their connections.</p>
+            <p>I did a card sorting to confirm the right of my choice for the information architecture. I used OptimalWorkshop and collected 12 responses.</p>
           </div>
         </div>
         <div class="row">
-          <div class="column">
-            <p>I did a card sorting to confirm the right of my choice for the information architecture. I used OptimalWorkshop and collected 12 responses.</p>
+          <div class="column col-md-6">
             <picture>
-              <source srcset="img/gale/card-sorting@1x.png" media="(max-width:767px)">
+              <source srcset="img/gale/card-sorting@2x.png" media="(max-width:767px)">
               <img src="img/gale/card-sorting@2x.png" alt="Card sorting">
             </picture>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/site-map@1x.png" media="(max-width:767px)">
               <img src="img/gale/site-map@2x.png" alt="Site map">
@@ -305,89 +324,54 @@
       </div>
     </div>
 
-    <hr>
+    <hr class="line">
 
-    <div>
-      	<div class="container">
+    <div class="section ten">
+      <div class="container">
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Wireframes and Prototype</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>During the design process, I had several iterations for my app. All of them are crucial and brought a lot of value to my product. 
               Changes from flow-fidelity to high-fidelity prototype I did base on the research results and my ideas. Then I performed usability testing, which helped me to improve the functionality of the app based on the user's feedback.  
               The next iterations were about visual design and accessibility: what visual solution could work better for the app. Then this was tested and based on the peer’s feedback I made the improvements.</p>
           </div>
         </div>
-      	<div class="container">
-          <h2>Home screen evolution</h2>
-          <div class="row">
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/homescreen1@1x.png" media="(max-width:767px)">
-                <img src="img/gale/homescreen1@2x.png" alt="Home screen low">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/homescreen2@1x.png" media="(max-width:767px)">
-                <img src="img/gale/homescreen2@2x.png" alt="Home screen mid">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/galehomescreen3@1x.png/" media="(max-width:767px)">
-                <img src="img/gale/homescreen3@2x.png" alt="Home screen high">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/homescreen4@1x.png" media="(max-width:767px)">
-                <img src="img/gale/homescreen4@2x.png" alt="Home screen final">
-              </picture>
-            </div>
+      </div>
+    </div>
+
+    <div class="section eleven">
+      <div class="container">
+        <div class="row">
+          <h3>Home screen evolution</h3>
+          <div class="column">
+            <picture>
+              <source srcset="img/gale/home-sreen-evolution@2x.png" media="(max-width:767px)">
+              <img src="img/gale/home-sreen-evolution@2x.png" alt="Home screen evolution">
+            </picture>
           </div>
         </div>
-      	<div class="container">
-          <h2>Spot screen evolution</h2>
-          <div class="row">
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/spotscreen1@1x.png" media="(max-width:767px)">
-                <img src="img/gale/spotscreen1@2x.png" alt="Spot screen low">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/spotscreen2@1x.png" media="(max-width:767px)">
-                <img src="img/gale/spotscreen2@2x.png" alt="Spot screen mid">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/spotscreen3@1x.png" media="(max-width:767px)">
-                <img src="img/gale/spotscreen3@2x.png" alt="Spot screen high">
-              </picture>
-            </div>
-            <div class="column">
-              <picture>
-                <source srcset="img/gale/spotscreen4@1x.png" media="(max-width:767px)">
-                <img src="img/gale/spotscreen4@2x.png" alt="Spot screen final">
-              </picture>
-            </div>
+        <div class="row">
+          <h3>Spot screen evolution</h3>
+          <div class="column">
+            <picture>
+              <source srcset="img/gale/spot-screen-evolution@2x.png" media="(max-width:767px)">
+              <img src="img/gale/spot-screen-evolution@2x.png" alt="Spot screen evolution">
+            </picture>
           </div>
         </div>
       </div>
     </div>
 
-    <div>
-    	<div class="container">
+    <div class="section twelve">
+      <div class="container">
         <h1>05. TEST</h1>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4">
             <h2>Usability Test</h2>
           </div>
-          <div class="column">
+          <div class="column col-md-8">
             <p>The usability test has been organized twice. In both cases the goals of the test were:</p>
             <ul>
               <li>To assess the learnability for users interacting with the Gale app for the first time.</li>
@@ -396,8 +380,10 @@
             </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="column">
+      </div>
+      <div class="container container-flex">
+        <div class="row row-flex">
+          <div class="column box">
             <h1>01</h1>
             <h3>Mid-fidelity prototype test</h3>
             <ul>
@@ -407,7 +393,14 @@
               <li>3 person without specific preference of water activity</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column ">
+            <i class="fas fa-arrow-down"></i>
+            <p>All interview scripts I turned to affinity mapping and find common patterns for observations, errors, negative and positive quotes. I use this as input for the rainbow spreadsheet, 
+              where I evaluate each point (I measured errors by using Jakob Nielsen’s scale), set up the priorities, and defined an action plan.</p>
+          </div>
+        </div>
+        <div class="row row-flex">
+          <div class="column box">
             <h1>02</h1>
             <h3>High-fidelity prototype test</h3>
             <ul>
@@ -415,18 +408,14 @@
               <li>I used a CareerFoundry Slack channel to engage peers for design collaboration and collect their feedback.</li>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <i class="fas fa-arrow-down"></i>
-            <p>All interview scripts I turned to affinity mapping and find common patterns for observations, errors, negative and positive quotes. I use this as input for the rainbow spreadsheet, 
-              where I evaluate each point (I measured errors by using Jakob Nielsen’s scale), set up the priorities, and defined an action plan.</p>
-          </div>
-          <div class="column">
+          <div class="column ">
             <i class="fas fa-arrow-down"></i>
             <p>I received all comments screen by screen on Adobe XD platform, so It was easy to set up an action plan and make improvements immediately.</p>
           </div>
         </div>
+      </div>
+
+      <div class="container">
         <div class="column">
           <picture>
             <source srcset="img/gale/affinity-map@1x.png" media="(max-width:767px)">
@@ -436,36 +425,37 @@
       </div>
     </div>
 
-    <div>
-    	<div class="container">
+
+    <div class="section thirteen">
+      <div class="container">
         <h2>TOP3 issues - Mid-fidelity prototype test</h2>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/mid-issue-01&02@1x.png" media="(max-width:767px)">
               <img src="img/gale/mid-issue-01&02@2x.png" alt="Before-after 01-02">
             </picture>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <h1>01</h1>
-            <p><span>Issue: </span>Not clear how to check the forecast for the next days.</p> 
-            <p><span>Action: </span>Add daily forecast on the homepage and the spot screens. User can see a short preview of the weather forecast and also click on the day and see more details.</p>
+            <p><span class="header">Issue: </span>Not clear how to check the forecast for the next days.</p> 
+            <p><span class="header">Action: </span>Add daily forecast on the homepage and the spot screens. User can see a short preview of the weather forecast and also click on the day and see more details.</p>
             <h1>02</h1>
-            <p><span>Issue: </span>Double icons for search and favourites feature on the home page.</p> 
-            <p><span>Action: </span>delete double icon for search; move the favourite icon close to the name of the spot on the right side.</p>
+            <p><span class="header">Issue: </span>Double icons for search and favourites feature on the home page.</p> 
+            <p><span class="header">Action: </span>delete double icon for search; move the favourite icon close to the name of the spot on the right side.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="column">
-            <h1>03</h1>
-            <p><span>Issue: </span>Not possible to get from login to sign up screen.</p>
-            <p><span>Action: </span>Make connection between screens and processes by link on the bottom redirecting user to correct place.</p>
-          </div>
-          <div class="column">
+        <div class="row reverse">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/mid-issue-03@1x.png" media="(max-width:767px)">
               <img src="img/gale/mid-issue-03@2x.png" alt="Before-after 03">
             </picture>
+          </div>
+          <div class="column col-md-6">
+            <h1>03</h1>
+            <p><span class="header">Issue: </span>Not possible to get from login to sign up screen.</p>
+            <p><span class="header">Action: </span>Make connection between screens and processes by link on the bottom redirecting user to correct place.</p>
           </div>
         </div>
       </div>
@@ -473,49 +463,48 @@
 
     <hr>
 
-    <div>
-      	<div class="container">
+    <div class="section fourteen">
+      <div class="container">
         <h2>TOP3 issues - High-fidelity prototype test</h2>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/high-issue-01&02@1x.png" media="(max-width:767px)">
               <img src="img/gale/high-issue-01&02@2x.png" alt="Before-after 01-02">
             </picture>
           </div>
-          <div class="column">
+          <div class="column col-md-6">
             <h1>01</h1>
-            <p><span>Issue: </span>Meteo part of the screen feels cramped.</p> 
-            <p><span>Action: </span>I moved Icon to the left and temperature to the right. Moved safety alert to this area and removed its borders.</p>
+            <p><span class="header">Issue: </span>Meteo part of the screen feels cramped.</p> 
+            <p><span class="header">Action: </span>I moved Icon to the left and temperature to the right. Moved safety alert to this area and removed its borders.</p>
             <h1>02</h1>
-            <p><span>Issue: </span>Alert is looking like a button, but it is just information.</p> 
-            <p><span>Action: </span>Delete a border, change colour text and move to the weather information to be hierarchically visible with the most important information.</p>
+            <p><span class="header">Issue: </span>Alert is looking like a button, but it is just information.</p> 
+            <p><span class="header">Action: </span>Delete a border, change colour text and move to the weather information to be hierarchically visible with the most important information.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="column">
-            <h1>03</h1>
-            <p><span>Issue: </span>Clicking «add a spot to compare» open empty forms, but users expect it prefilled with user location.</p>
-            <p><span>Action: </span>Add current location to compare screen with option to change it.</p>
-          </div>
-          <div class="column">
+        <div class="row reverse">
+          <div class="column col-md-6">
             <picture>
               <source srcset="img/gale/high-issue-03@1x.png" media="(max-width:767px)">
               <img src="img/gale/high-issue-03@2x.png" alt="Before-after 03">
             </picture>
           </div>
+          <div class="column col-md-6">
+            <h1>03</h1>
+            <p><span class="header">Issue: </span>Clicking «add a spot to compare» open empty forms, but users expect it prefilled with user location.</p>
+            <p><span class="header">Action: </span>Add current location to compare screen with option to change it.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div>
-    	<div class="container">
+    <div class="section sixteen">
+      <div class="container">
         <h1>06. VISUAL DESIGN </h1>
         <div class="column">
-          <h2>UI Design</h2>
           <picture>
-            <source srcset="img/gale/style-guide@1x" media="(max-width:767px)">
-            <img src="img/gale/style-guide@2x" alt="UI Design">
+            <source srcset="img/gale/style-guide@1x.png" media="(max-width:767px)">
+            <img src="img/gale/style-guide@2x.png" alt="UI Design">
           </picture>
         </div>
       </div>
@@ -523,77 +512,35 @@
 
     <hr>
 
-    <div>
-      <div>
-        <h2>Final mockup</h2>
+    <div class="section seventeen">
+      <div class="container">
         <div class="row">
+          <h2>Final mockup</h2>
           <div class="column">
-            <h2>Home</h2>
+
             <picture>
-              <source srcset="img/gale/mockup-home@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-home@2x.png" alt="Home">
+              <source srcset="img/gale/final-mockup-1@2x.png" media="(max-width:767px)">
+              <img src="img/gale/final-mockup-1@2x.png" alt="Final mockup 1">
             </picture>
           </div>
           <div class="column">
-            <h2>Search results</h2>
             <picture>
-              <source srcset="img/gale/mockup-search@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-search@2x.png" alt="Search results">
+              <source srcset="img/gale/final-mockup-2@2x.png" media="(max-width:767px)">
+              <img src="img/gale/final-mockup-2@2x.png" alt="Final mockup 2">
             </picture>
           </div>
-          <div class="column">
-            <h2>Compare</h2>
-            <picture>
-              <source srcset="img/gale/mockup-compare@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-compare@2x.png" alt="Compare">
-            </picture>
-          </div>
-          <div class="column">
-            <h2>Compare results</h2>
-            <picture>
-              <source srcset="img/gale/mockup-compare-results@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-compare-results@2x.png" alt="Compare results">
-            </picture>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <h2>Favourites</h2>
-            <picture>
-              <source srcset="img/gale/mockup-fav@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-fav@2x.png" alt="Favourites">
-            </picture>
-          </div>
-          <div class="column">
-            <h2>Wind Map</h2>
-            <picture>
-              <source srcset="img/gale/mockup-wind@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-wind@2x.png" alt="Wind Map">
-            </picture>
-          </div>
-          <div class="column">
-            <h2>Weather Map</h2>
-            <picture>
-              <source srcset="img/gale/mockup-meteo@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-meteo@2x.png" alt="Weather Map">
-            </picture>
-          </div>
-          <div class="column">
-            <h2>Spot</h2>
-            <picture>
-              <source srcset="img/gale/mockup-spot@2x.png" media="(max-width:767px)">
-              <img src="img/gale/mockup-spot@2x.png" alt="Spot">
-            </picture>
-          </div>
+
         </div>
       </div>
     </div>
 
-    <div>
-      	<div class="container">
+
+    <div class="section eighteen">
+      <div class="container">
         <h1>07. LESSONS LEARNED </h1>
         <div class="row">
-          <div class="column">
+          <div class="column col-md-4"></div>
+          <div class="column col-md-8">
             <p>It was important to made proper research and define personas with their journey map. It gave me a clear understanding of needs and expectations. This way the ideation phase was smooth and fun, but at the same time very productive and
               based on data.  
               The iterative process was the best way to keep wireframes on the right way. Important to test each decision and iterate based on the user's input and always keep in mind that “you are not a user”. Visual design is aimed to support
@@ -603,8 +550,8 @@
       </div>
     </div>
 
-    <div class="">
-      	<div class="container">
+    <div class="section nineteen">
+      <div class="container">
         <h2>Thank you for watching!</h2>
       </div>
     </div>
@@ -635,8 +582,8 @@
 
   <div class="back-to-top">
     <a href="#top">
-		<i class="fas fa-angle-up"></i>
-		</a>
+      <i class="fas fa-angle-up"></i>
+    </a>
   </div>
 
 </body>

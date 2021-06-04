@@ -19,15 +19,11 @@ body {
   color: #1B1C20;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
-  margin: 0
-}
-
 h1 {
   font-size: 1.563em;
   font-weight: 600;
-  margin-top: 24px;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -45,7 +41,6 @@ img {
 }
 
 /*link*/
-
 a {
   color: #A0A1A8;
   text-decoration: none;
@@ -96,13 +91,13 @@ a:active {
   font-size: 0.8em;
   font-weight: 400;
 }
+
 .nav_link {
   color: #1B1C20 !important;
   font-weight: 500;
 }
 
 /* button */
-
 .button {
   display: inline-block;
   background-color: transparent;
@@ -123,7 +118,7 @@ a:active {
 
 .button:hover {
   color: #1BBDD4;
-    }
+}
 
 .back-to-top {
   position: fixed;
@@ -133,7 +128,6 @@ a:active {
 }
 
 /* header */
-
 header {
   background-color: #fafafa;
   text-align: center;
@@ -147,53 +141,54 @@ header {
 header h2 {
   color: #1B1C20;
   display: inline;
-    }
+}
 
-    nav>ul {
-    list-style-type: none;
-    padding: 0;
-  }
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  nav>ul>li {
-    display: inline-block;
-  }
+nav>ul>li {
+  display: inline-block;
+}
 
-  nav>ul>li>a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 500;
-    color: #1BBDD4;
-  }
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #A0A1A8 !important;
+}
 
-  nav>ul>li>a:active,
-  nav>ul>li>a:hover {
-    color: #1B1C20;
-  }
+nav>ul>li>a:active,
+nav>ul>li>a:hover {
+  color: #1B1C20;
+}
 
-  nav {
-    display: inline-block;
-    width: 100%;
-  }
+nav {
+  display: inline-block;
+  width: 100%;
+}
 
 /* Layout styling */
-
 main {
   padding-top: 117px;
 }
+
 .container {
   padding: 0 16px;
 }
 
 .row {
-  margin: 48px 0;
+  margin: 24px 0;
 }
+
 .cover-img {
   border-radius: 5px;
 }
 
 .column {
-    margin: 16px 0;
+  margin: 0;
 }
 
 #hero {
@@ -221,11 +216,13 @@ main {
   border-radius: 5px;
   margin: 0;
 }
+
 #work p {
-margin-top: 8px;
+  margin-top: 8px;
 }
+
 #work h3 {
-margin: 8px 0;
+  margin: 8px 0;
 }
 
 #about-page h3 {
@@ -233,34 +230,41 @@ margin: 8px 0;
 }
 
 picture {
-display: block;
-    line-height: 0;
+  display: block;
+  line-height: 0;
 }
 
 /* footer */
-
- #contact {
-   text-align: center;
-   margin-top: 24px;
- }
-
- #contact .container {
-   border-top: 1px solid #a0a1a8;
-   padding-top: 24px;
- }
-
- /*CSS Animations example*/
-
- svg {
-   width: 100%;
- max-width: 100%;
- height: auto;
- }
- @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+#contact {
+  text-align: center;
 }
+
+#contact .container {
+  border-top: 1px solid #D2D3D5;
+  padding: 24px;
+}
+
+/*CSS Animations example*/
+svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -270,9 +274,15 @@ display: block;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 24s;
   animation-name: cloud-move;
@@ -282,146 +292,575 @@ display: block;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 29s cloud-move-reverse infinite alternate linear;
 }
 
 /*House Hunters*/
+#project {
+  padding-top: 100px;
+}
 
-.container-cover{
+#projct img {
+  max-width: 80%;
+}
+
+#project p {
+  margin: 8px 0;
+}
+
+#project h2 {
+  font-weight: 600;
+}
+
+.section.cover {
   background: linear-gradient(270deg, rgba(0, 194, 203, 0.6) 0%, rgba(0, 112, 240, 0.6) 100%);
-color: #FFFFFF;
-text-align: center;
-padding: 0;
-margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-.container-project {
-  background: image
-text-align: left;
-padding: 0;
-margin: 0;
-display: flex;
-flex-direction: column;
-;
+.cover .rows:first-child {
+  padding-top: 24px;
 }
 
-.row-project {
-display: flex;
-max-width: 50%
+.cover .rows:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 8px;
 }
-.column-skills {
-display: flex;
-flex-direction: row;
+
+.cover p {
+  margin-bottom: 24px !important;
 }
-.container-persona {
-background: #F2F2F3;
-text-align: center;
+
+.section.persona {
+  background: #F2F2F3;
+  padding: 24px;
+  text-align: center;
 }
-.row-persona {
-display: flex;
+
+.persona .column {
+  text-align: left;
+  padding-left: 16px;
 }
+
 .icons {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.column-persona {
-display: flex;
-flex-direction: column;
-max-width: 50%;
-padding: 16px;
-text-align: left;
+
+.section.visual {
+  padding: 24px;
+  text-align: center;
 }
- /* ==============================
+
+.laptop {
+  margin-bottom: -60px;
+}
+
+.visual .column {
+  text-align: left;
+  padding: 8px;
+}
+
+.section.moodboard {
+  background: #E6F1FE;
+  padding: 24px 0 24px;
+}
+
+.section.userflow {
+  text-align: center;
+  padding: 24px;
+}
+
+.userflow .column {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section.wireframes {
+  background: #F2F2F3;
+  text-align: center;
+  padding: 24px;
+}
+
+.wireframes a {
+  color: #1BBDD4;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.wireframes p {
+  margin-bottom: 48px !important;
+}
+
+.section.uistyle {
+  text-align: center;
+  padding: 24px;
+}
+
+.uistyle h2 {
+  margin-bottom: 48px;
+}
+
+.uistyle.column {
+  max-width: 850px;
+}
+
+.section.ui {
+  background: url("../img/househunters/ui-elements2x.jpg");
+  background-size: cover;
+  padding: 24px 0;
+}
+
+.section.responsive {
+  padding: 0;
+  text-align: center;
+  align-content: center;
+}
+
+.responsive .column {
+  text-align: left;
+}
+
+.section.property {
+  background: #E6F1FE;
+}
+
+.section.search {
+  background: url("../img/househunters/girl-with-laptop@2x.jpg");
+  background-size: cover;
+  padding: 24px;
+}
+
+.section.final {
+  background: linear-gradient(270deg, rgba(54, 209, 220, 0.2) 0%, rgba(91, 134, 229, 0.2) 100%);
+  padding: 24px;
+  align-items: center;
+}
+
+.section.last {
+  background: linear-gradient(270deg, rgba(0, 194, 203, 0.6) 0%, rgba(0, 112, 240, 0.6) 100%);
+  text-align: center;
+  color: #F2F2F3;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.visual .row {
+  margin-bottom: 0;
+}
+
+/*Gale weather forecasts*/
+#gale {
+  padding-top: 100px;
+}
+
+#gale img {
+  max-width: 100%;
+}
+
+#gale p {
+  margin: 8px 0;
+}
+
+#gale h2 {
+  font-weight: 600;
+}
+
+#gale h1 {
+  color: #0770E3;
+}
+
+#gale .row {
+  margin: 32px 0;
+}
+
+.section.one {
+  margin-top: 0 !important;
+}
+
+.one .container {
+  background: url("../img/gale/gale-cover@1x.jpg");
+  background-size: cover;
+  height: 350px;
+  background-position: 45%;
+  padding: 24px;
+  color: #2B5F6D;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.one .row {
+  margin: 0;
+}
+
+.one picture {
+  max-width: 120px !important;
+  min-width: 100px !important;
+  margin-left: 150px !important;
+}
+
+.one h1 {
+  margin-left: 0 !important;
+  color: #2B5F6D !important;
+}
+
+.four .icon {
+  max-width: 100px !important;
+  border-radius: 15px !important;
+}
+
+.box {
+  width: 280px;
+  min-height: 200px;
+  max-height: 250px;
+  background-color: #E1F2FE;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.twelve .box {
+  width: 100%;
+  min-height: auto;
+  max-height: 350px;
+}
+
+#gale picture {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  color: #B7BECC;
+}
+
+.eleven .column {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.eleven .row {
+  text-align: center;
+}
+
+.four .row-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.four .row-flex .column {
+  margin: 0 16px;
+}
+
+.twelve .row-flex {
+  flex-direction: column;
+}
+
+.twelve .box {
+  margin: 0;
+}
+
+.container-flex p {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+.twelve .fas {
+  margin-left: 45%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: auto;
+  color: #0770E3;
+}
+
+#gale .section {
+  margin: 52px 0;
+}
+
+.thirteen picture {
+  max-width: 400px !important;
+}
+
+.thirteen .column {
+  margin-bottom: 52px;
+}
+
+.fourteen .column {
+  margin: 48px 0;
+}
+
+.sixteen .column {
+  margin-top: 48px;
+}
+
+.seventeen .row {
+  text-align: center;
+}
+
+.seventeen .column {
+  margin: 32px 0;
+}
+
+.nineteen {
+  text-align: center;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #D2D3D5;
+  border: none;
+  height: 1px;
+}
+
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-header {
-  text-align: unset;
+  header {
+    text-align: unset;
     padding: 32px 0;
-}
-nav {
+  }
+
+  nav {
     width: auto;
-        float: right;
-        }
-nav>ul {
+    float: right;
+  }
+
+  nav>ul {
     margin: 0;
-}
-main {
-  padding-top: 100px;
-}
-body {
-  font-size: 18px;
-}
-main h2 {
-  font-size: 1.563em;
-}
-#hero span {
-  display: block;
-  margin-top: 0;
-}
-.col-md-6 {
-  width: 50%;
-  text-align: left;
-}
-[class*="col-"] {
-  float: left;
-  padding: 16px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#work .row {
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  main h2 {
+    font-size: 1.563em;
+  }
+
+  #hero span {
+    display: block;
+    margin-top: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    text-align: left;
+  }
+
+  .col-md-4 {
+    width: 30%;
+    text-align: left;
+  }
+
+  .col-md-4 h2 {
+    margin: 0;
+  }
+
+  .col-md-8 {
+    width: 70%;
+    text-align: left;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 16px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #work .row {
     padding: 0px;
     display: flex;
-    }
-#work .column {
+  }
+
+  #work .column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+  }
+
+  #about-page .row {
+    margin: 24px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section.project {
+    background: url("../img/househunters/couple-with-laptop@2x.jpg");
+    background-size: cover;
+    background-position: 40%;
+    padding: 24px 0;
+  }
+
+  .project .row {
+    max-width: 60%;
+  }
+
+  .uistyle h2 {
+    margin-bottom: 48px;
+    font-weight: 600;
+  }
+
+  #gale h1 {
+    margin-left: 16px;
+  }
+
+  .visual .row {
+    display: flex;
+  }
+
+  .visual .column {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .two .row {
+    max-width: 70%;
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+
+  .one picture {
+    max-width: 150px !important;
+    min-width: 100px !important;
+    margin-left: 30px !important;
+  }
+
+  .row-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .six .row-flex {
+    justify-content: space-around;
+  }
+
+  .twelve .box {
+    max-width: 100%;
+    min-height: 350px;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container-flex .row-flex {
+    justify-content: flex-start;
+    max-width: 45%;
+  }
+
+  .thirteen .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .thirteen .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .fourteen .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .fourteen .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .final .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .final .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
-
-#about-page .row {
-  margin: 24px;
-}
-}
-
-
-
-
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-7 {
     width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .visual .column:first-child {
+    align-items: flex-start;
+  }
+
+  .one picture {
+    max-width: 200px !important;
+    min-width: 150px !important;
+    margin-left: 30px !important;
+  }
 }
-.col-lg-5 {
-  width: 40%;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
+
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
