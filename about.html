@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Olga Aspro / About</title>
   <script src="https://kit.fontawesome.com/de1731136c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,96 +16,105 @@
 <body id="about-page">
 
   <header>
-  	<div class="container">
-      	<a class="logo" href="index.html">
-          	<h2>Olga Aspro</h2>
-      </a>
-      <nav>
-      <ul class="nav">
-          <li><a href="index.html">Work</a></li>
           <li><a class="nav_link" href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html">
+          <h2>Olga Aspro</h2>
+        </a>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Work</a></li>
+            <li><a class="nav_link" href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main id="top">
-        	<div class="container">
-      <div class="row">
-        <div class="column col-lg-5">
-          <picture>
-            <source srcset="img/olgaprofile@1.jpg" media="(max-width:767px)">
-            <img src="img/olgaprofile@2.jpg" alt="House Hunters - Real Estate responsive app" class="cover-img">
-          </picture>
-        </div>
-                  <div class="column  col-lg-7">
+    <div class="section about">
+      <div class="container">
+        <div class="row">
+          <div class="column col-lg-5">
+            <picture>
+              <source srcset="img/olgaprofile@1.jpg" media="(max-width:767px)">
+              <img src="img/olgaprofile@2.jpg" alt="House Hunters - Real Estate responsive app" class="cover-img">
+            </picture>
+          </div>
+          <div class="column  col-lg-7">
             <h2>My Story</h2>
             <p>Hi there, I'm Olga, a UX/UI designer. I dared to change completely my career path from Quality management in the automotive industry to a Design field. I love simple and clear products, when there is no need for explanation, all is
               working right-first-time and bring great experience.</p>
-              <p>I am really good at problem solving and empathy. I can understand and see the logic behind any action or object very quickly and always will propose a solution. However, I prefer to perform rigorous research and test my solutions.</p>
-                <p>I'm very organized at my job, I like the system approach. It means that result of the creative process I will always turn to the clear system.</p>
-                <p>I have Russian origin and currently, I’m based in Budapest. Thanks to my Quality Management job I had a chance to live in UK and France, work with teams from all over the world (China, US, Europe, India).</p>
-            
+            <p>I am really good at problem solving and empathy. I can understand and see the logic behind any action or object very quickly and always will propose a solution. However, I prefer to perform rigorous research and test my solutions.</p>
+            <p>I'm very organized at my job, I like the system approach. It means that result of the creative process I will always turn to the clear system.</p>
+            <p>I have Russian origin and currently, I’m based in Budapest. Thanks to my Quality Management job I had a chance to live in UK and France, work with teams from all over the world (China, US, Europe, India).</p>
+
             <a href="files/cvaspro.pdf" target="_blank" class="button">Review my CV</a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="section skills">
+      <div class="container">
+        <div class="row">
+          <h2>Skills & Tools</h2>
+          <div class="column col-md-6 col-lg-7">
+
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>UX design</li>
+              <li>UI design</li>
+              <li>Front end development</li>
+            </ul>
           </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Marvel</li>
+              <li>InVision</li>
+              <li>Optimal Sort</li>
+              <li>SurveyMonkey</li>
+            </ul>
           </div>
-          	<div class="container">
-            <div class="row">
-              <h2>Skills & Tools</h2>
-    					<div class="column col-md-6 col-lg-7">
+        </div>
+      </div>
+    </div>
+  </main>
 
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>UX design</li>
-                  <li>UI design</li>
-                  <li>Front end development</li>
-                </ul>
-              </div>
-              <div class="column col-md-6 col-lg-5">
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Figma</li>
-                  <li>Adobe XD</li>
-                  <li>Marvel</li>
-                  <li>InVision</li>
-                  <li>Optimal Sort</li>
-                  <li>SurveyMonkey</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-            </main>
+  <footer id="contact">
+    <div class="container">
+      <h2>Let's get in touch</h2>
 
-            <footer id="contact">
-          		<div class="container">
-          			<h2>Let's get in touch</h2>
+      <div class="social">
 
-          			<div class="social">
+        <a href="mailto:aspro.olga@gmail.com?body=Hi%20Olga">
+          <i class="fas fa-envelope"></i>
+        </a>
 
-          				<a href="mailto:aspro.olga@gmail.com?body=Hi%20Olga">
-          					<i class="fas fa-envelope"></i>
-          				</a>
+        <a href="LINKEDIN-URL" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
 
-          				<a href="LINKEDIN-URL" target="_blank">
-          					<i class="fab fa-linkedin-in"></i>
-          				</a>
-
-          				<a href="BEHANCE-URL" target="_blank">
-          					<i class="fab fa-behance"></i>
-          				</a>
-          			</div>
-          			<p class="copy">&copy; Olga Aspro 2021</p>
-          		</div>
-          	</footer>
+        <a href="BEHANCE-URL" target="_blank">
+          <i class="fab fa-behance"></i>
+        </a>
+      </div>
+      <p class="copy">&copy; Olga Aspro 2021</p>
+    </div>
+  </footer>
 
   <div class="back-to-top">
     <a href="#top">
-    <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </a>
   </div>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

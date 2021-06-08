@@ -130,8 +130,7 @@ a:active {
 /* header */
 header {
   background-color: #fafafa;
-  text-align: center;
-  padding-top: 16px;
+  padding: 16px 0 16px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
   position: fixed;
   display: inline-block;
@@ -146,10 +145,7 @@ header h2 {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -165,14 +161,36 @@ nav>ul>li>a:hover {
   color: #1B1C20;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  font-size: 18px;
+  color: #1BBDD4 !important;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* Layout styling */
 main {
-  padding-top: 117px;
+  padding-top: 64px;
 }
 
 .container {
@@ -262,8 +280,7 @@ svg {
 
   100% {
     fill: #f76414;
-  }
-}
+  }}
 
 .sun {
   animation-duration: 4s;
@@ -306,9 +323,6 @@ svg {
 }
 
 /*House Hunters*/
-#project {
-  padding-top: 100px;
-}
 
 #projct img {
   max-width: 80%;
@@ -467,9 +481,6 @@ svg {
 }
 
 /*Gale weather forecasts*/
-#gale {
-  padding-top: 100px;
-}
 
 #gale img {
   max-width: 100%;
@@ -643,7 +654,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 32px 0;
+    padding: 24px 0;
   }
 
   nav {
@@ -652,11 +663,11 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    margin: 0;
+    margin: 0.25em 0;
   }
 
   main {
-    padding-top: 110px;
+    padding-top: 85px;
   }
 
   body {
@@ -824,6 +835,14 @@ Medium devices (640px and larger)
     flex-direction: row-reverse;
     align-items: center;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
 }
 
 /* ==============================
