@@ -42,18 +42,18 @@ img {
 
 /*link*/
 a {
-  color: #A0A1A8;
+  color: #72737D;
   text-decoration: none;
 }
 
 a:visited {
-  color: #A0A1A8;
+  color: #72737D;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #1B1C20;
+  color: #1BBDD4;
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ a:active {
 
 .nav_link {
   color: #1B1C20 !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* button */
@@ -125,6 +125,13 @@ a:active {
   right: 10px;
   bottom: 30px;
   color: #1B1C20;
+  background: rgba(27, 189, 212, 0.2);
+  border-radius: 25px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* header */
@@ -153,20 +160,26 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-size: 0.75em;
   font-weight: 500;
-  color: #A0A1A8 !important;
+  color: #72737D !important;
 }
 
 nav>ul>li>a:active,
 nav>ul>li>a:hover {
-  color: #1B1C20;
+  color: #1BBDD4;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
+.navtoggle.responsive {
+  height: 100vh;
+}
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -175,16 +188,19 @@ nav>ul>li>a:hover {
   color: #1BBDD4 !important;
   padding-right: 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   text-align: center;
   font-size: 18px;
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -209,7 +225,7 @@ main {
   margin: 0;
 }
 
-#hero {
+.section.hero {
   background-color: #FAFAFA;
   padding: 20px 0;
   display: inline-block;
@@ -217,11 +233,11 @@ main {
   width: 100%;
 }
 
-#work {
+.work {
   text-align: left;
 }
 
-#work .row {
+.work .row {
   background: #EFEFEF;
   border-radius: 5px;
   text-align: center;
@@ -229,22 +245,18 @@ main {
   padding: 24px;
 }
 
-#work .column {
+.work .column {
   display: block;
   border-radius: 5px;
   margin: 0;
 }
 
-#work p {
+.work p {
   margin-top: 8px;
 }
 
-#work h3 {
+.work h3 {
   margin: 8px 0;
-}
-
-#about-page h3 {
-  margin-top: 0;
 }
 
 picture {
@@ -280,7 +292,8 @@ svg {
 
   100% {
     fill: #f76414;
-  }}
+  }
+}
 
 .sun {
   animation-duration: 4s;
@@ -322,8 +335,25 @@ svg {
   animation: 29s cloud-move-reverse infinite alternate linear;
 }
 
-/*House Hunters*/
+/*About*/
+.about .profile {
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
 
+.about .avatar {
+  min-width: 200px;
+  max-width: 250px;
+  border: 1px #1BBDD4 !important;
+}
+
+#about-page .container {
+  margin-bottom: 48px;
+}
+
+/*House Hunters*/
 #projct img {
   max-width: 80%;
 }
@@ -362,13 +392,17 @@ svg {
 
 .section.persona {
   background: #F2F2F3;
-  padding: 24px;
+  padding: 24px 0;
   text-align: center;
 }
 
 .persona .column {
   text-align: left;
-  padding-left: 16px;
+}
+
+.persona .persona-pic {
+  border-radius: 5px;
+  max-width: 400px;
 }
 
 .icons {
@@ -452,6 +486,10 @@ svg {
   text-align: left;
 }
 
+.wireframes .column {
+  text-align: left;
+}
+
 .section.property {
   background: #E6F1FE;
 }
@@ -464,7 +502,8 @@ svg {
 
 .section.final {
   background: linear-gradient(270deg, rgba(54, 209, 220, 0.2) 0%, rgba(91, 134, 229, 0.2) 100%);
-  padding: 24px;
+  padding: 24px 0;
+  padding-top: 62px;
   align-items: center;
 }
 
@@ -481,7 +520,6 @@ svg {
 }
 
 /*Gale weather forecasts*/
-
 #gale img {
   max-width: 100%;
 }
@@ -678,7 +716,7 @@ Medium devices (640px and larger)
     font-size: 1.563em;
   }
 
-  #hero span {
+  .hero span {
     display: block;
     margin-top: 0;
   }
@@ -713,24 +751,20 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  #work .row {
+  .work .row {
     padding: 0px;
     display: flex;
   }
 
-  #work .column {
+  .work .column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
 
-  #about-page .row {
-    margin: 24px;
-  }
-
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -749,6 +783,16 @@ Medium devices (640px and larger)
   .uistyle h2 {
     margin-bottom: 48px;
     font-weight: 600;
+  }
+
+  .wireframes .short-row {
+    max-width: 730px;
+    margin: 56px auto;
+  }
+
+  .responsive .row {
+    max-width: 730px;
+    margin: 56px auto;
   }
 
   #gale h1 {
@@ -774,6 +818,10 @@ Medium devices (640px and larger)
     max-width: 150px !important;
     min-width: 100px !important;
     margin-left: 30px !important;
+  }
+
+  .one .container {
+    height: 400px;
   }
 
   .row-flex {
@@ -837,12 +885,12 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
+    display: inline-block;
+  }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -858,7 +906,7 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }

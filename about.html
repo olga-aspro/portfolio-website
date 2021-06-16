@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="about-page">
+<body id="top">
 
   <header>
     <div class="container">
@@ -23,7 +23,8 @@
         </a>
         <nav>
           <ul class="nav">
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Work</a></li>
             <li><a class="nav_link" href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -33,18 +34,25 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="about-page">
+
     <div class="section about">
-      <div class="container">
+      <div class="container profile">
         <div class="row">
-          <div class="column col-lg-5">
+          <div class="column">
             <picture>
-              <source srcset="img/olgaprofile@1.jpg" media="(max-width:767px)">
-              <img src="img/olgaprofile@2.jpg" alt="House Hunters - Real Estate responsive app" class="cover-img">
+              <source srcset="img/olgaprofile@1.png" media="(max-width:767px)">
+              <img src="img/olgaprofile@1.png" alt="House Hunters - Real Estate responsive app" class="avatar">
             </picture>
           </div>
-          <div class="column  col-lg-7">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-4">
             <h2>My Story</h2>
+          </div>
+          <div class="column  col-md-8">
             <p>Hi there, I'm Olga, a UX/UI designer. I dared to change completely my career path from Quality management in the automotive industry to a Design field. I love simple and clear products, when there is no need for explanation, all is
               working right-first-time and bring great experience.</p>
             <p>I am really good at problem solving and empathy. I can understand and see the logic behind any action or object very quickly and always will propose a solution. However, I prefer to perform rigorous research and test my solutions.</p>
@@ -59,8 +67,10 @@
     <div class="section skills">
       <div class="container">
         <div class="row">
-          <h2>Skills & Tools</h2>
-          <div class="column col-md-6 col-lg-7">
+          <div class="column col-md-4">
+            <h2>Skills & Tools</h2>
+          </div>
+          <div class="column col-md-4">
 
             <h3>Relevant Skills</h3>
             <ul>
@@ -69,7 +79,7 @@
               <li>Front end development</li>
             </ul>
           </div>
-          <div class="column col-md-6 col-lg-5">
+          <div class="column col-md-4">
             <h3>Tools I Use</h3>
             <ul>
               <li>Figma</li>
