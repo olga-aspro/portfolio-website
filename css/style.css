@@ -349,8 +349,7 @@ svg {
 .about .avatar {
   min-width: 200px;
   max-width: 250px;
-  border: 2px solid #1bbdd4;
-  border-radius: 50%;
+  
 }
 
 #about-page .container {
