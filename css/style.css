@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #1B1C20;
+  color: #1b1c20;
 }
 
 h1 {
@@ -40,35 +40,35 @@ img {
   width: 100%;
 }
 
-/*link*/
+/* link */
 a {
-  color: #72737D;
+  color: #72737d;
   text-decoration: none;
 }
 
 a:visited {
-  color: #72737D;
+  color: #72737d;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #1BBDD4;
+  color: #1bbdd4;
   text-decoration: none;
 }
 
 a:active {
-  color: #1B1C20;
+  color: #1b1c20;
   text-decoration: none;
 }
 
 .social a {
   display: flex;
   text-decoration: none;
-  color: #1B1C20;
+  color: #1b1c20;
   font-weight: 600;
   border-radius: 25px;
-  border: 1px solid #1BBDD4;
+  border: 1px solid #1bbdd4;
   width: 42px;
   height: 42px;
   justify-content: center;
@@ -84,7 +84,7 @@ a:active {
 }
 
 .social a:hover {
-  color: #1BBDD4;
+  color: #1bbdd4;
 }
 
 .copy {
@@ -93,7 +93,7 @@ a:active {
 }
 
 .nav_link {
-  color: #1B1C20 !important;
+  color: #1b1c20 !important;
   font-weight: 600;
 }
 
@@ -101,30 +101,30 @@ a:active {
 .button {
   display: inline-block;
   background-color: transparent;
-  color: #1B1C20;
+  color: #1b1c20;
   font-weight: 500;
   font-size: 0.7em;
   text-transform: uppercase;
   padding: 12px 24px;
   border-radius: 25px;
-  border: 1px solid #1BBDD4;
+  border: 1px solid #1bbdd4;
   transition-duration: 0.2s;
   text-decoration: none;
 }
 
 .button:visited {
-  color: #1B1C20;
+  color: #1b1c20;
 }
 
 .button:hover {
-  color: #1BBDD4;
+  color: #1bbdd4;
 }
 
 .back-to-top {
   position: fixed;
   right: 10px;
   bottom: 30px;
-  color: #1B1C20;
+  color: #1b1c20;
   background: rgba(27, 189, 212, 0.2);
   border-radius: 25px;
   width: 42px;
@@ -137,42 +137,44 @@ a:active {
 /* header */
 header {
   background-color: #fafafa;
-  padding: 16px 0 16px;
+  padding: 16px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
   position: fixed;
   display: inline-block;
   width: 100%;
+  z-index: 999;
 }
 
 header h2 {
-  color: #1B1C20;
+  color: #1b1c20;
   display: inline;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-size: 0.75em;
   font-weight: 500;
-  color: #72737D !important;
+  color: #72737d !important;
 }
 
-nav>ul>li>a:active,
-nav>ul>li>a:hover {
-  color: #1BBDD4;
+nav > ul > li > a:active,
+nav > ul > li > a:hover {
+  color: #1bbdd4 !important;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -185,7 +187,7 @@ nav>ul>li>a:hover {
   right: 0;
   top: 4px;
   font-size: 18px;
-  color: #1BBDD4 !important;
+  color: #1bbdd4 !important;
   padding-right: 0;
 }
 
@@ -226,8 +228,8 @@ main {
 }
 
 .section.hero {
-  background-color: #FAFAFA;
-  padding: 20px 0;
+  background-color: #fafafa;
+  padding: 85px 0 0;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -235,10 +237,11 @@ main {
 
 .work {
   text-align: left;
+  padding-top: 85px;
 }
 
 .work .row {
-  background: #EFEFEF;
+  background: #efefef;
   border-radius: 5px;
   text-align: center;
   margin: 16px 0;
@@ -270,11 +273,11 @@ picture {
 }
 
 #contact .container {
-  border-top: 1px solid #D2D3D5;
+  border-top: 1px solid #d2d3d5;
   padding: 24px;
 }
 
-/*CSS Animations example*/
+/* CSS Animations example */
 svg {
   width: 100%;
   max-width: 100%;
@@ -335,9 +338,9 @@ svg {
   animation: 29s cloud-move-reverse infinite alternate linear;
 }
 
-/*About*/
+/* About */
 .about .profile {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   display: flex;
   justify-content: center;
   padding: 16px;
@@ -346,14 +349,15 @@ svg {
 .about .avatar {
   min-width: 200px;
   max-width: 250px;
-  border: 1px #1BBDD4 !important;
+  border: 2px solid #1bbdd4;
+  border-radius: 50%;
 }
 
 #about-page .container {
   margin-bottom: 48px;
 }
 
-/*House Hunters*/
+/* House Hunters */
 #projct img {
   max-width: 80%;
 }
@@ -368,7 +372,7 @@ svg {
 
 .section.cover {
   background: linear-gradient(270deg, rgba(0, 194, 203, 0.6) 0%, rgba(0, 112, 240, 0.6) 100%);
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -391,7 +395,7 @@ svg {
 }
 
 .section.persona {
-  background: #F2F2F3;
+  background: #f2f2f3;
   padding: 24px 0;
   text-align: center;
 }
@@ -426,8 +430,8 @@ svg {
 }
 
 .section.moodboard {
-  background: #E6F1FE;
-  padding: 24px 0 24px;
+  background: #e6f1fe;
+  padding: 24px 0;
 }
 
 .section.userflow {
@@ -442,13 +446,13 @@ svg {
 }
 
 .section.wireframes {
-  background: #F2F2F3;
+  background: #f2f2f3;
   text-align: center;
   padding: 24px;
 }
 
 .wireframes a {
-  color: #1BBDD4;
+  color: #1bbdd4;
   font-size: 1.25em;
   font-weight: 500;
 }
@@ -491,7 +495,7 @@ svg {
 }
 
 .section.property {
-  background: #E6F1FE;
+  background: #e6f1fe;
 }
 
 .section.search {
@@ -510,7 +514,7 @@ svg {
 .section.last {
   background: linear-gradient(270deg, rgba(0, 194, 203, 0.6) 0%, rgba(0, 112, 240, 0.6) 100%);
   text-align: center;
-  color: #F2F2F3;
+  color: #f2f2f3;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -519,7 +523,7 @@ svg {
   margin-bottom: 0;
 }
 
-/*Gale weather forecasts*/
+/* Gale weather forecasts */
 #gale img {
   max-width: 100%;
 }
@@ -533,7 +537,7 @@ svg {
 }
 
 #gale h1 {
-  color: #0770E3;
+  color: #0770e3;
 }
 
 #gale .row {
@@ -550,7 +554,7 @@ svg {
   height: 350px;
   background-position: 45%;
   padding: 24px;
-  color: #2B5F6D;
+  color: #2b5f6d;
   font-weight: 500;
   line-height: 1;
 }
@@ -567,7 +571,7 @@ svg {
 
 .one h1 {
   margin-left: 0 !important;
-  color: #2B5F6D !important;
+  color: #2b5f6d !important;
 }
 
 .four .icon {
@@ -579,7 +583,7 @@ svg {
   width: 280px;
   min-height: 200px;
   max-height: 250px;
-  background-color: #E1F2FE;
+  background-color: #e1f2fe;
   border-radius: 5px;
   padding: 16px;
   margin: 8px 0;
@@ -598,7 +602,7 @@ svg {
 }
 
 .line {
-  color: #B7BECC;
+  color: #b7becc;
 }
 
 .eleven .column {
@@ -681,7 +685,7 @@ hr {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #D2D3D5;
+  background-color: #d2d3d5;
   border: none;
   height: 1px;
 }
@@ -700,7 +704,7 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 0.25em 0;
   }
 
@@ -752,7 +756,7 @@ Medium devices (640px and larger)
   }
 
   .work .row {
-    padding: 0px;
+    padding: 0;
     display: flex;
   }
 
@@ -921,13 +925,3 @@ Large devices (1024px or larger)
     margin-left: 30px !important;
   }
 }
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
-
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {}
