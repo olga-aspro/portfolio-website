@@ -640,7 +640,7 @@ svg {
   margin-top: 24px;
   margin-bottom: 24px;
   margin-right: auto;
-  color: #0770E3;
+  color: #0770e3;
 }
 
 #gale .section {
@@ -893,6 +893,10 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .about p {
+    margin: 6 !important;
   }
 }
 
