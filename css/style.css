@@ -10,6 +10,14 @@ accent (bluemarine): #1BBDD4;
   box-sizing: border-box;
 }
 
+.ancor {
+  margin-top: -80px;
+}
+
+.ancor-header {
+  margin-top: 80px;
+}
+
 body {
   background-color: #fafafa;
   font-family: 'Quicksand', sans-serif;
@@ -17,6 +25,10 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #1b1c20;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -139,7 +151,7 @@ a:active {
 header {
   background-color: #fafafa;
   padding: 16px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
   position: fixed;
   display: inline-block;
   width: 100%;
@@ -151,22 +163,36 @@ header h2 {
   display: inline;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
+nav>ul>li>a {
+  padding: 10px 15px;
   text-transform: uppercase;
   font-size: 0.75em;
   font-weight: 500;
   color: #72737d !important;
+  display: block;
 }
 
-nav > ul > li > a:active,
-nav > ul > li > a:hover {
+nav ul.toc>li>a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #72737d !important;
+  display: block;
+}
+
+.overview nav>ul>li>a {
+  padding: 10px 0;
+}
+
+nav>ul>li>a:active,
+nav>ul>li>a:hover {
   color: #1bbdd4 !important;
 }
 
@@ -189,7 +215,7 @@ nav > ul > li > a:hover {
   top: 4px;
   font-size: 18px;
   color: #1bbdd4 !important;
-  padding-right: 0;
+  padding: 0;
 }
 
 .navtoggle.responsive nav {
@@ -198,7 +224,7 @@ nav > ul > li > a:hover {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
   font-size: 18px;
 }
@@ -393,6 +419,46 @@ svg {
   margin-bottom: 24px !important;
 }
 
+.section.overview {
+  background: #f2f2f3;
+  padding: 24px 0;
+}
+
+.overview .container {
+  max-width: 400px;
+}
+
+.toc i {
+  margin-right: 10px;
+}
+
+.overview .rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.external {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.external a {
+  display: flex;
+  text-decoration: none;
+  color: #1b1c20;
+  font-weight: 600;
+  border-radius: 25px;
+  border: 1px solid #1bbdd4;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin: auto 8px;
+  transition-duration: 0.2s;
+}
+
 .section.persona {
   background: #f2f2f3;
   padding: 24px 0;
@@ -415,7 +481,7 @@ svg {
 }
 
 .section.visual {
-  padding: 24px;
+  padding: 24px 0;
   text-align: center;
 }
 
@@ -447,7 +513,7 @@ svg {
 .section.wireframes {
   background: #f2f2f3;
   text-align: center;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .wireframes a {
@@ -573,6 +639,13 @@ svg {
   color: #2b5f6d !important;
 }
 
+.two .rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .four .icon {
   max-width: 100px !important;
   border-radius: 15px !important;
@@ -604,13 +677,9 @@ svg {
   color: #b7becc;
 }
 
-.eleven .column {
-  margin-top: 24px;
-  margin-bottom: 48px;
-}
-
 .eleven .row {
   text-align: center;
+  padding: 32px 0;
 }
 
 .four .row-flex {
@@ -668,7 +737,7 @@ svg {
 }
 
 .seventeen .column {
-  margin: 32px 0;
+  padding: 48px 0;
 }
 
 .nineteen {
@@ -703,7 +772,30 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav > ul {
+  nav > ul > li > a {
+    padding: 0 15px;
+  }
+
+  .overview nav {
+    width: auto;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .two nav {
+    width: auto;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .overview nav>ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  nav>ul {
     margin: 0.25em 0;
   }
 
@@ -815,12 +907,23 @@ Medium devices (640px and larger)
     max-width: 70%;
     margin-right: 0 !important;
     margin-left: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .two .rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 70%;
+    margin-right: 0 !important;
+    margin-left: auto !important;
   }
 
   .one picture {
-    max-width: 150px !important;
+    max-width: 130px !important;
     min-width: 100px !important;
-    margin-left: 30px !important;
+    margin-left: 20px !important;
   }
 
   .one .container {
